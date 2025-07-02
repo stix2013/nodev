@@ -1,4 +1,4 @@
 services:
   web:
     volumes:
-      - "$HOME/.gemini:/home/stevan/.gemini"
+      - "$HOME/.gemini:/home/${GEMINI_USER_CONFIG:-user}/.gemini"
