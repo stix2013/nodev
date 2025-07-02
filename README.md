@@ -61,17 +61,6 @@ Before you begin, ensure you have the following installed:
     ddev npm install
     ```
 
-## Google Gemini CLI Setup
-
-To use the Google Gemini CLI, you need to do the following:
-
-1.  Copy the example environment file:
-    ```bash
-    cp .ddev/.env.web-example .ddev/.env.web
-    ```
-2.  In the `.ddev/.env.web` file, set the `GEMINI_USER_CONFIG` variable to your username inside the DDEV web container. You can find your username by running `ddev ssh` and then `whoami`.
-
-
 ## Folder Structure
 
 *   `api/`: Contains the Laravel 12 backend API.
