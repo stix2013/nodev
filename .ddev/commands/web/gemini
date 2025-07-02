@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Description: Run Google Gemini CLI commands in the container
+## Usage: gemini
+## Example: "gemini"
+
+gemini "$@"
+

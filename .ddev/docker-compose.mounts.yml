@@ -1,0 +1,4 @@
+services:
+  web:
+    volumes:
+      - "$HOME/.gemini:/home/stevan/.gemini"
