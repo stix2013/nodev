@@ -9,8 +9,8 @@ additional_hostnames:
     - app.nodev
 additional_fqdns: []
 database:
-    type: mariadb
-    version: "11.4"
+    type: postgres
+    version: "16"
 hooks:
     post-start:
         - exec: pm2 start apps.config.js
