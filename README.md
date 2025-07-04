@@ -17,6 +17,12 @@ The backend, powered by Laravel 12, provides a secure and scalable RESTful API. 
 *   **Backend:** Laravel 12
 *   **CLI:** Google Gemini CLI
 
+## References
+
+*   [Next.js Laravel Breeze Example](https://github.com/carlos-talavera/nextjs-laravel-breeze) - This project was used as a reference for integrating Laravel Sanctum with Next.js SSR.
+*   [Integrating Laravel Sanctum with Next.js SSR: Key Points](https://charlie2code.com/blog/integrating-laravel-sanctum-with-nextjs-ssr-key-points)
+*   [Node.js Development with DDEV](https://www.lullabot.com/articles/nodejs-development-ddev)
+
 ## Features
 
 ### Frontend (Next.js 15)
@@ -60,6 +66,15 @@ Before you begin, ensure you have the following installed:
     ddev composer install
     ddev npm install
     ```
+
+## DDEV Configuration
+
+This project leverages DDEV for local development, with specific configurations to manage both the Laravel backend and the Next.js frontend.
+
+*   **Project Type:** Configured as a `laravel` project with the document root set to `api/public`.
+*   **Node.js Version:** DDEV is set to use Node.js version `20.19.3`.
+*   **Frontend Application:** The Next.js application resides in the `webapp/` directory.
+*   **PM2 Integration:** Upon `ddev start`, a `post-start` hook executes `pm2 start apps.config.js`. The `apps.config.js` file is configured to run `npm run dev` for the Next.js application within the `webapp/` directory. It also includes a fallback mechanism to reinstall `node_modules` if the initial `npm run dev` command fails.
 
 ## Folder Structure
 

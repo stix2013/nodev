@@ -1,6 +1,6 @@
 name: nodev
-type: php
-docroot: ""
+type: laravel
+docroot: api/public
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
@@ -10,7 +10,7 @@ additional_hostnames:
 additional_fqdns: []
 database:
     type: mariadb
-    version: "10.11"
+    version: "11.4"
 hooks:
     post-start:
         - exec: pm2 start apps.config.js
