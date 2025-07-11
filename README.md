@@ -22,6 +22,9 @@ The backend, powered by Laravel 12, provides a secure and scalable RESTful API. 
 *   [Next.js Laravel Breeze Example](https://github.com/carlos-talavera/nextjs-laravel-breeze) - This project was used as a reference for integrating Laravel Sanctum with Next.js SSR.
 *   [Integrating Laravel Sanctum with Next.js SSR: Key Points](https://charlie2code.com/blog/integrating-laravel-sanctum-with-nextjs-ssr-key-points)
 *   [Node.js Development with DDEV](https://www.lullabot.com/articles/nodejs-development-ddev)
+*   [Laravel 12 Middleware](https://laravel.com/docs/12.x/middleware#registering-middleware)
+*   [Upgrading to Laravel 12](https://laravel.com/docs/12.x/upgrade)
+*   [Zod Explained](https://betterstack.com/community/guides/scaling-nodejs/zod-explained/)
 
 ## Features
 
